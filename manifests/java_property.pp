@@ -1,7 +1,7 @@
-### Define puppet_conf::java_property
+### Define puppet_config::java_property
 # Writes java properties configuration
 
-define puppet_conf::java_property (
+define puppet_config::java_property (
     $file  = undef,
     $key   = undef,
     $value = undef,
