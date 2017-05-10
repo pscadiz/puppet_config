@@ -10,7 +10,7 @@ define puppet_config::config_file (
 ) {
 
 	file { $directory:
-		ensure => $directory,
+		ensure => directory,
 		group  => $group,
 		owner  => $owner,
 	}
