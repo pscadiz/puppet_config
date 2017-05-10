@@ -15,7 +15,7 @@ define puppet_config::config_file (
 		owner  => $owner,
 	}
 
-	-> file { "${directory}/${file}":
+	-> file { "${directory}/${filename}":
 		ensure => file,
 		group  => $group,
 		owner  => $owner,
