@@ -9,7 +9,7 @@ define puppet_config::java_property (
 
     augeas { "${file}/${key}/${value}":
         lens    => 'Properties.lns',
-        incl    => ${file},
+        incl    => $file,
         changes => [ "set /files${file}/${key} ${value}" ],
     }
 }
